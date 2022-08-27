@@ -1,0 +1,35 @@
+﻿@using ProjAtividade_3.Service
+
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Cadastro de Perfume</title>
+</head>
+
+<body>
+    <a href="~/Home">Inicio</a>
+    <br />
+    <p>Cadastre o Perfume</p>
+
+    <form action="~/ProcessaProduto" method="post">
+        <div>
+            <label>Nome:</label>
+            <input type="text" name="Nome" id="IdNome" />
+        </div>
+
+        <div>
+            <label>Aroma:</label>
+            <input type="text" name="Carateristica" id="IdCarateristica" />
+        </div>
+        <input type="hidden" name="Id" id="IdId" value=@CreateRead.ContagemProduto(2) />
+        <input type="hidden" name="Tipo" id="IdTipo" value="2" />
+
+        <div>
+            <input type="submit" value="Enviar" />
+        </div>
+    </form>
+</body>
+
+</html>

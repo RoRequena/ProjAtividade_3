@@ -1,0 +1,22 @@
+﻿@using ProjAtividade_3.Service
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <a href="~/Home">Inicio</a>
+    <br />
+    <div>
+        <p>Shampoos Cadastrados</p>
+        <Section>
+            <pre>
+                @CreateRead.ObterShampoo()
+            </pre>
+        </Section>
+    </div>
+</body>
+</html>
